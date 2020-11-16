@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MyCollectionViewCell" customModule="CollectionViewMVCProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="189"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="189"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EMt-hq-GT3">
+                        <rect key="frame" x="0.0" y="40" width="346" height="149"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62b-at-U7R">
+                        <rect key="frame" x="100" y="11" width="166" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="166" id="D0j-Ur-YnR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="EMt-hq-GT3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6Hi-Ai-lhf"/>
+                <constraint firstItem="EMt-hq-GT3" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="7DJ-Zy-O32"/>
+                <constraint firstAttribute="trailing" secondItem="62b-at-U7R" secondAttribute="trailing" constant="80" id="Vx5-Cb-mDA"/>
+                <constraint firstItem="EMt-hq-GT3" firstAttribute="top" secondItem="62b-at-U7R" secondAttribute="bottom" constant="8" id="cMP-jW-BFB"/>
+                <constraint firstItem="62b-at-U7R" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="11" id="f0B-iT-PQ4"/>
+                <constraint firstAttribute="bottom" secondItem="EMt-hq-GT3" secondAttribute="bottom" id="uri-QO-hT2"/>
+            </constraints>
+            <size key="customSize" width="346" height="189"/>
+            <connections>
+                <outlet property="imageView" destination="EMt-hq-GT3" id="Q4L-3Z-hUD"/>
+                <outlet property="labelName" destination="62b-at-U7R" id="sUz-g7-mdA"/>
+            </connections>
+            <point key="canvasLocation" x="-121.73913043478262" y="86.71875"/>
+        </collectionViewCell>
+    </objects>
+</document>
